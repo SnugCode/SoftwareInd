@@ -26,7 +26,7 @@
     <div id="existingArcherForm" style="display:none;">
         <h2>Existing Archer</h2>
         <form action="search_archer.php" method="post">
-            <label for="searchName">Search Name:</label>
+            <label for="searchName">Enter One Name:</label>
             <input type="text" id="searchName" name="searchName" required>
             <input type="submit" value="Search">
         </form>
