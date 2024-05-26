@@ -28,7 +28,7 @@ button {
     flex-direction: column;
     gap: 7px;
     position: relative;
-    color: white;
+    color: black; /* Change text color to black */
     margin-bottom: 15px; /* Add spacing between textboxes */
   }
   
@@ -39,6 +39,7 @@ button {
     top: 13px;
     transition: 0.3s;
     pointer-events: none;
+    color: black; /* Change label color to black */
   }
   
   .input {
