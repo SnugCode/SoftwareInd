@@ -57,10 +57,24 @@ $conn->close();
     <h2>Scores submitted successfully!</h2>
     <form action="equipment_form.php" method="get">
         <input type="hidden" name="archerID" value="<?php echo $archerID; ?>">
-        <input type="submit" value="Submit Another Entry">
+        <button type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>Submit Another Entry</span>
+        </button>
     </form>
     <form action="index.php" method="get">
-        <input type="submit" value="Go to Homepage">
+        <button type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>Go to Homepage</span>
+        </button>
     </form>
 </body>
 </html>
