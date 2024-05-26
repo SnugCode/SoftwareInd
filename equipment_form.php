@@ -8,6 +8,7 @@ $archerID = isset($_GET['archerID']) ? $_GET['archerID'] : '';
 <html>
 <head>
     <title>Select Equipment</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <h2>Select Equipment</h2>

@@ -6,6 +6,7 @@ $archerID = $_POST['archerID'];
 <html>
 <head>
     <title>Archer Options</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <h2>Choose Option</h2>

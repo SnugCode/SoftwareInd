@@ -11,6 +11,7 @@ if (!$stagingID || !$numEnds) {
 <html>
 <head>
     <title>Enter Scores</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <h2>Enter Scores</h2>

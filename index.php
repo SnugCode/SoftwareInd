@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Archery Database</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <h1>Welcome to the Archery Database</h1>
@@ -26,7 +27,7 @@
     <div id="existingArcherForm" style="display:none;">
         <h2>Existing Archer</h2>
         <form action="search_archer.php" method="post">
-            <label for="searchName">Enter One Name:</label>
+            <label for="searchName">Search Name:</label>
             <input type="text" id="searchName" name="searchName" required>
             <input type="submit" value="Search">
         </form>
