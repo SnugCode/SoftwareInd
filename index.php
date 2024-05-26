@@ -28,7 +28,14 @@
                 <label for="gender" class="label">Gender:</label>
                 <input type="text" id="gender" name="gender" class="input" required>
             </div>
-            <input type="submit" value="Register">
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span>Register</span>
+            </button>
         </form>
     </div>
 
@@ -39,7 +46,14 @@
                 <label for="searchName" class="label">Search Name:</label>
                 <input type="text" id="searchName" name="searchName" class="input" required>
             </div>
-            <input type="submit" value="Search">
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span>Search</span>
+            </button>
         </form>
     </div>
 

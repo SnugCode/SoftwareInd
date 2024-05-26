@@ -22,6 +22,7 @@ if (!$stagingID || !$numEnds) {
             <h3>End <?php echo $end; ?></h3>
             <?php for ($i = 1; $i <= 6; $i++) { ?>
                 <div class="container">
+                    <label for="arrow<?php echo $end . '_' . $i; ?>" class="label">Arrow <?php echo $i; ?>:</label>
                     <select id="arrow<?php echo $end . '_' . $i; ?>" name="arrow<?php echo $end . '_' . $i; ?>" class="input" required>
                         <option value="0">M</option>
                         <option value="0">0</option>
@@ -36,11 +37,17 @@ if (!$stagingID || !$numEnds) {
                         <option value="10">10</option>
                         <option value="X">X</option>
                     </select>
-                    <label for="arrow<?php echo $end . '_' . $i; ?>" class="label">Arrow <?php echo $i; ?>:</label>
-                </div><br>
+                </div>
             <?php } ?>
         <?php } ?>
-        <input type="submit" value="Submit Scores">
+        <button type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>Submit Scores</span>
+        </button>
     </form>
 </body>
 </html>
