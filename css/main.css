@@ -9,6 +9,8 @@ button {
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    display: inline-block;
+    margin: 10px; /* Add margin to separate buttons */
   }
   
   button span:not(:nth-child(6)) {
