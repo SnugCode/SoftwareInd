@@ -32,16 +32,26 @@ $archerID = $_GET['archerID'];
             ?>
         </select><br>
         <label for="range">Range:</label>
-        <select id="range" name="range" required>
+        <select id="range" name="range" required onchange="updateNumEnds()">
             <?php
             $result = $conn->query("SELECT RangeID, `Range` FROM Ranges");
             while ($row = $result->fetch_assoc()) {
-                echo "<option value='" . $row['RangeID'] . "'>" . $row['Range'] . "</option>";
+                echo "<option value='" . $row['RangeID'] . "' data-numends='" . $row['Range'] . "'>" . $row['Range'] . "</option>";
             }
             ?>
         </select><br>
+        <input type="hidden" id="numEnds" name="numEnds">
         <input type="submit" value="Next">
     </form>
+
+    <script>
+        function updateNumEnds() {
+            const rangeSelect = document.getElementById('range');
+            const selectedOption = rangeSelect.options[rangeSelect.selectedIndex];
+            const numEnds = selectedOption.getAttribute('data-numends');
+            document.getElementById('numEnds').value = numEnds;
+        }
+    </script>
 </body>
 </html>
 
