@@ -29,6 +29,7 @@ button {
     gap: 7px;
     position: relative;
     color: white;
+    margin-bottom: 15px; /* Add spacing between textboxes */
   }
   
   .container .label {
@@ -47,7 +48,7 @@ button {
     outline: none;
     padding: 0px 7px;
     border-radius: 6px;
-    color: #fff;
+    color: black; /* Change text color to black */
     font-size: 15px;
     background-color: transparent;
     box-shadow: 3px 3px 10px rgba(0,0,0,1),
@@ -56,7 +57,7 @@ button {
   
   .input:focus {
     border: 2px solid transparent;
-    color: #fff;
+    color: black; /* Change text color to black */
     box-shadow: 3px 3px 10px rgba(0,0,0,1),
     -1px -1px 6px rgba(255, 255, 255, 0.4),
     inset 3px 3px 10px rgba(0,0,0,1),
