@@ -1,5 +1,5 @@
 <?php
-$servername = "feenix-mariadb-web.swin.edu.au";
+$servername = "feenix-mariadb.swin.edu.au";
 $username = "cos20031_56";
 $password = "HCFEyNZ7ZP";
 $dbname = "cos20031_56_db";
