@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
     echo "<input type='submit' value='Next'>";
     echo "</form>";
 } else {
-    echo "No archers found.";
+    echo "<p>No archers found.</p>";
 }
 
 $conn->close();

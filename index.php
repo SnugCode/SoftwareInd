@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Archery Database</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <h1>Welcome to the Archery Database</h1>
