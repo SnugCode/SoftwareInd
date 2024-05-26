@@ -1,6 +1,10 @@
 <?php
-$stagingID = $_GET['stagingID'];
-$numEnds = $_GET['numEnds'];
+$stagingID = isset($_GET['stagingID']) ? $_GET['stagingID'] : null;
+$numEnds = isset($_GET['numEnds']) ? $_GET['numEnds'] : null;
+
+if (!$stagingID || !$numEnds) {
+    die('Missing parameters.');
+}
 ?>
 
 <!DOCTYPE html>
