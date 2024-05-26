@@ -15,7 +15,7 @@ $archerID = $_GET['archerID'];
     <form action="process_competition.php" method="post">
         <input type="hidden" name="archerID" value="<?php echo $archerID; ?>">
         <label for="competition">Competition:</label>
-        <select id="competition" name="competition" required>
+        <select id="competition" name="competition" class="input" required>
             <?php
             $result = $conn->query("SELECT CompetitionID, CompetitionName FROM Competition");
             while ($row = $result->fetch_assoc()) {
@@ -24,7 +24,7 @@ $archerID = $_GET['archerID'];
             ?>
         </select><br>
         <label for="division">Division:</label>
-        <select id="division" name="division" required>
+        <select id="division" name="division" class="input" required>
             <?php
             $result = $conn->query("SELECT DivisionID, DivisionName FROM Division");
             while ($row = $result->fetch_assoc()) {
@@ -33,7 +33,7 @@ $archerID = $_GET['archerID'];
             ?>
         </select><br>
         <label for="equipment">Equipment:</label>
-        <select id="equipment" name="equipment" required>
+        <select id="equipment" name="equipment" class="input" required>
             <?php
             $result = $conn->query("SELECT EquipmentID, Types FROM Equipment");
             while ($row = $result->fetch_assoc()) {
@@ -42,7 +42,7 @@ $archerID = $_GET['archerID'];
             ?>
         </select><br>
         <label for="round">Round:</label>
-        <select id="round" name="round" required>
+        <select id="round" name="round" class="input" required>
             <?php
             $result = $conn->query("SELECT RoundID, RoundName FROM Round");
             while ($row = $result->fetch_assoc()) {
@@ -51,7 +51,7 @@ $archerID = $_GET['archerID'];
             ?>
         </select><br>
         <label for="range">Range:</label>
-        <select id="range" name="range" required>
+        <select id="range" name="range" class="input" required>
             <?php
             $result = $conn->query("SELECT RangeID, `Range` FROM Ranges");
             while ($row = $result->fetch_assoc()) {

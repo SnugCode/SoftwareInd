@@ -15,7 +15,7 @@ $archerID = isset($_GET['archerID']) ? $_GET['archerID'] : '';
     <form action="process_equipment.php" method="post">
         <input type="hidden" name="archerID" value="<?php echo $archerID; ?>">
         <label for="equipment">Equipment:</label>
-        <select id="equipment" name="equipment" required>
+        <select id="equipment" name="equipment" class="input" required>
             <?php
             $result = $conn->query("SELECT EquipmentID, Types FROM Equipment");
             while ($row = $result->fetch_assoc()) {
@@ -24,7 +24,7 @@ $archerID = isset($_GET['archerID']) ? $_GET['archerID'] : '';
             ?>
         </select><br>
         <label for="round">Round:</label>
-        <select id="round" name="round" required>
+        <select id="round" name="round" class="input" required>
             <?php
             $result = $conn->query("SELECT RoundID, RoundName FROM Round");
             while ($row = $result->fetch_assoc()) {
@@ -33,7 +33,7 @@ $archerID = isset($_GET['archerID']) ? $_GET['archerID'] : '';
             ?>
         </select><br>
         <label for="range">Range:</label>
-        <select id="range" name="range" required onchange="updateNumEnds()">
+        <select id="range" name="range" class="input" required onchange="updateNumEnds()">
             <?php
             $result = $conn->query("SELECT RangeID, `Range` FROM Ranges");
             while ($row = $result->fetch_assoc()) {

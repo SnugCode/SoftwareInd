@@ -21,21 +21,23 @@ if (!$stagingID || !$numEnds) {
         <?php for ($end = 1; $end <= $numEnds; $end++) { ?>
             <h3>End <?php echo $end; ?></h3>
             <?php for ($i = 1; $i <= 6; $i++) { ?>
-                <label for="arrow<?php echo $end . '_' . $i; ?>">Arrow <?php echo $i; ?>:</label>
-                <select id="arrow<?php echo $end . '_' . $i; ?>" name="arrow<?php echo $end . '_' . $i; ?>" required>
-                    <option value="0">M</option>
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="X">X</option>
-                </select><br>
+                <div class="container">
+                    <select id="arrow<?php echo $end . '_' . $i; ?>" name="arrow<?php echo $end . '_' . $i; ?>" class="input" required>
+                        <option value="0">M</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="X">X</option>
+                    </select>
+                    <label for="arrow<?php echo $end . '_' . $i; ?>" class="label">Arrow <?php echo $i; ?>:</label>
+                </div><br>
             <?php } ?>
         <?php } ?>
         <input type="submit" value="Submit Scores">
