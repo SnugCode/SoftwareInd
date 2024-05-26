@@ -1,7 +1,7 @@
 <?php
 include 'connect.php';
 
-$archerID = $_GET['archerID'];
+$archerID = isset($_GET['archerID']) ? $_GET['archerID'] : '';
 ?>
 
 <!DOCTYPE html>

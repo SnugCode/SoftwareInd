@@ -38,6 +38,7 @@ for ($end = 1; $end <= $numEnds; $end++) {
     }
 }
 
-echo "Scores submitted successfully!";
+// Redirect to equipment selection form after scores are submitted
+header("Location: equipment_form.php?archerID=$archerID");
 $conn->close();
 ?>
