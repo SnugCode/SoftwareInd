@@ -26,7 +26,7 @@ button {
   .container {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 20px; /* Increase the gap between textboxes */
     position: relative;
     color: black; /* Change text color to black */
     margin-bottom: 15px; /* Add spacing between textboxes */
@@ -35,15 +35,12 @@ button {
   .container .label {
     font-size: 15px;
     padding-left: 10px;
-    position: absolute;
-    top: 13px;
-    transition: 0.3s;
-    pointer-events: none;
+    margin-bottom: 5px; /* Add spacing below labels */
     color: black; /* Change label color to black */
   }
   
   .input {
-    width: 200px;
+    width: 100%; /* Adjust width to fit container */
     height: 45px;
     border: none;
     outline: none;
@@ -51,7 +48,7 @@ button {
     border-radius: 6px;
     color: black; /* Change text color to black */
     font-size: 15px;
-    background-color: transparent;
+    background-color: white; /* Change background color to white */
     box-shadow: 3px 3px 10px rgba(0,0,0,1),
     -1px -1px 6px rgba(255, 255, 255, 0.4);
   }
