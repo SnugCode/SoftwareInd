@@ -4,6 +4,12 @@ include 'connect.php';
 $stagingID = $_POST['stagingID'];
 $numEnds = $_POST['numEnds'];
 
+// Fetch the archerID from the staging table
+$sql = "SELECT ArcherID FROM Staging WHERE StagingID = '$stagingID'";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$archerID = $row['ArcherID'];
+
 for ($end = 1; $end <= $numEnds; $end++) {
     $arrows = [];
     for ($i = 1; $i <= 6; $i++) {
