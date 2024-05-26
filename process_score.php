@@ -44,7 +44,22 @@ for ($end = 1; $end <= $numEnds; $end++) {
     }
 }
 
-// Redirect to equipment selection form after scores are submitted
-header("Location: equipment_form.php?archerID=$archerID");
 $conn->close();
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Score Submission</title>
+</head>
+<body>
+    <h2>Scores submitted successfully!</h2>
+    <form action="equipment_form.php" method="get">
+        <input type="hidden" name="archerID" value="<?php echo $archerID; ?>">
+        <input type="submit" value="Submit Another Entry">
+    </form>
+    <form action="index.php" method="get">
+        <input type="submit" value="Go to Homepage">
+    </form>
+</body>
+</html>
