@@ -34,7 +34,7 @@ $archerID = $_GET['archerID'];
         <label for="range">Range:</label>
         <select id="range" name="range" required>
             <?php
-            $result = $conn->query("SELECT RangeID, Range FROM Ranges");
+            $result = $conn->query("SELECT RangeID, `Range` FROM Ranges");
             while ($row = $result->fetch_assoc()) {
                 echo "<option value='" . $row['RangeID'] . "'>" . $row['Range'] . "</option>";
             }
