@@ -8,6 +8,7 @@ $archerID = $_GET['archerID'];
 <html>
 <head>
     <title>Select Competition</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <h2>Select Competition</h2>

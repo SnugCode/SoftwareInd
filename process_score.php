@@ -51,6 +51,7 @@ $conn->close();
 <html>
 <head>
     <title>Score Submission</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <h2>Scores submitted successfully!</h2>
